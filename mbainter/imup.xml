@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>imup</Name>
+  <Beta>failse</Beta>
+  <Category>Network Services: Other:</Category>
+  <Repository>imup/client</Repository>
+  <Registry>https://hub.docker.com/r/imup/client</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <GitHub>https://github.com/imup-io/client</GitHub>
+  <Project>https://www.imup.io/</Project>
+  <Overview>This application is the client binary distributed for use with imUp.io's connectivity and speed testing platform. It continuously checks for connectivity and periodically runs speed tests in accordance with the ndt7-protocol. The client is also enabled with imUp real-time features including on-demand speed tests, liveness check-ins as well as remote configuration</Overview>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-templates/main/mbainter/imup.xml</TemplateURL>
+  <Icon>https://cdn.prod.website-files.com/61046e1c14c7ba07f420b1c7/6303735c8fbff4d597ea7510_Screen%20Shot%202022-08-22%20at%207.14.39%20AM-p-500.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Date>1726512665</Date>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Email" Target="EMAIL" Default="" Mode="" Description="email address associated with imup data" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PING_ENABLED" Target="PING_ENABLED" Default="false" Mode="" Description="whether to use ICMP ping or net dials for connectivity tests" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ACCEPT_THE_TOS" Target="ACCEPT_THE_TOS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PING_ADDRESS_INTERNAL" Target="PING_ADDRESS_INTERNAL" Default="" Mode="" Description="configurable gateway address" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
