@@ -10,7 +10,7 @@
   <Project>https://gravity.beryju.io/</Project>
   <GitHub>https://github.com/beryju/gravity</GitHub>
   <Overview>Gravity offers DNS with optional ad-blocking, DHCP with automatic DNS integration, and network discovery.</Overview>
-  <Category>Network Services:</Category>
+  <Category>Network:DNS Network:Other</Category>
   <WebUI>8008</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-templates/main/mbainter/gravity.xml</TemplateURL>
   <Icon>https://github.com/BeryJu/gravity/blob/main/web/src/assets/images/icon-color.png?raw=true</Icon>
