@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>coredns_omada</Name>
+  <Repository>https://github.com/dougbw/coredns_omada</Repository>
+  <Registry>ghcr.io/dougbw/coredns_omada</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://coredns.io/manual/plugins/</Project>
+  <Overview>Coredns build with the coredns_omada plugin which resolves local DNS addresses for clients on TP-Link Omada SDN networks. It uses the omada API to periodically get a list of client addresses.</Overview>
+  <Category>Network:DNS Network:Management</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-templates/main/mbainter/coredns_omada.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Date>1726514850</Date>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="53" Default="53" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Port 2" Target="53" Default="53" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false"/>
+</Container>
