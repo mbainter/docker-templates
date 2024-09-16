@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gravity</Name>
+  <Repository>ghcr.io/beryju/gravity:stable</Repository>
+  <Registry>https://github.com/beryju/gravity/pkgs/container/gravity</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://gravity.beryju.io/</Project>
+  <GitHub>https://github.com/beryju/gravity</GitHub>
+  <Overview>Gravity offers DNS with optional ad-blocking, DHCP with automatic DNS integration, and network discovery.</Overview>
+  <Category>Network Services:</Category>
+  <WebUI>8008</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-templates/main/mbainter/gravity.xml</TemplateURL>
+  <Icon>https://github.com/BeryJu/gravity/blob/main/web/src/assets/images/icon-color.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1726514038</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Gravity UI" Target="8008" Default="8008" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Gravity data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="LISTEN_ONLY" Target="LISTEN_ONLY" Default="true|false" Mode="" Description="Enable listen-only mode. In listen-only mode, Gravity will not reply to any DHCP packets and will not run discovery." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Instance Identifier" Target="INSTANCE_IDENTIFIER" Default="" Mode="" Description="The identifier for this instance of gravity - must be unique." Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
