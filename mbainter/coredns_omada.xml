@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Project>https://coredns.io/manual/plugins/</Project>
   <Overview>Coredns build with the coredns_omada plugin which resolves local DNS addresses for clients on TP-Link Omada SDN networks. It uses the omada API to periodically get a list of client addresses.</Overview>
-  <Category>Network:DNS Network:Management</Category>
+  <Category>Network:DNS</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-templates/main/mbainter/coredns_omada.xml</TemplateURL>
   <Icon/>
